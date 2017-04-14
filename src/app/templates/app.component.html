@@ -1,15 +1,18 @@
+<child-block></child-block>
 <h1>
   {{title}}
 </h1>
 <label>Ваше имя:</label>
 <input [(ngModel)]="name" placeholder="name">
-<div class="content-block">
+<button (click)="onClickMe()">Click me!</button>
+<div class="content-block col-1-4">
   <h3>{{name}}</h3>
   {{content}}
 </div>
 
 <div>
   <a routerLink="/heroes">Heroes</a>
+  <a routerLink="/monkeys">Monkeys</a>
   <router-outlet></router-outlet>
 </div>
 

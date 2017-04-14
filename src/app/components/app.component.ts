@@ -3,8 +3,8 @@ import { User } from './user';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: '../templates/app.component.html',
+  styleUrls: ['../styles/app.component.css']
 })
 export class AppComponent {
   title = 'App works!';
@@ -16,4 +16,8 @@ export class AppComponent {
     new User(5, 'Micheal'),
     new User(13, 'Anna')
   ];
+
+  onClickMe() {
+    alert('Hello man :)');
+  }
 }

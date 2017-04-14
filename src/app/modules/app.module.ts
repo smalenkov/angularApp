@@ -4,13 +4,17 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
-import { AppComponent } from './app.component';
-import { LinkComponent } from './link.component';
+import { AppComponent } from '../components/app.component';
+import { LinkComponent } from '../components/link.component';
+import { MonkeyComponent } from '../components/monkey.component';
+import { ChildComponent } from '../components/Child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LinkComponent
+    LinkComponent,
+    MonkeyComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
@@ -20,6 +24,10 @@ import { LinkComponent } from './link.component';
       {
         path: 'heroes',
         component: LinkComponent
+      },
+      {
+        path: 'monkeys',
+        component: MonkeyComponent
       }
     ])
   ],
