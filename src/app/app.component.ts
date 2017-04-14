@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from './user';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'App works!';
   content = 'Мы будем использовать браузер в качестве окружения, но основное внимание будет уделяться именно самому языку JavaScript.';
-  name = 'Имя';
+  name = '';
+  users = [
+    new User(1, 'Petr'),
+    new User(2, 'Adam'),
+    new User(5, 'Micheal'),
+    new User(13, 'Anna')
+  ];
 }

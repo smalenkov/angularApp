@@ -7,3 +7,14 @@
   <h3>{{name}}</h3>
   {{content}}
 </div>
+
+<div>
+  <a routerLink="/heroes">Heroes</a>
+  <router-outlet></router-outlet>
+</div>
+
+<ul class="user-list">
+  <li *ngFor="let user of users">
+    {{ user.id }} — {{ user.name }}
+  </li>
+</ul>

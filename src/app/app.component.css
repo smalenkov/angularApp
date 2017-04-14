@@ -1,3 +1,7 @@
+.user-list li {
+  list-style: none;
+}
+
 .content-block {
   font-size: 18px;
 }
