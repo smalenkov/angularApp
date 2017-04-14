@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  content = 'Мы будем использовать браузер в качестве окружения, но основное внимание будет уделяться именно самому языку JavaScript.';
+  name = 'Имя';
 }
