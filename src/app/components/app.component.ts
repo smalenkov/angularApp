@@ -10,6 +10,9 @@ export class AppComponent {
   title = 'App works!';
   content = 'Мы будем использовать браузер в качестве окружения, но основное внимание будет уделяться именно самому языку JavaScript.';
   name = '';
+  uName: string = 'Семен';
+  uAge: number = 28;
+  nameval = 'goods';
   users = [
     new User(1, 'Petr'),
     new User(2, 'Adam'),
