@@ -8,13 +8,15 @@ import { AppComponent } from '../components/app.component';
 import { LinkComponent } from '../components/link.component';
 import { MonkeyComponent } from '../components/monkey.component';
 import { ChildComponent } from '../components/Child.component';
+import { KeysComponent } from "../components/keys.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     LinkComponent,
     MonkeyComponent,
-    ChildComponent
+    ChildComponent,
+    KeysComponent
   ],
   imports: [
     BrowserModule,

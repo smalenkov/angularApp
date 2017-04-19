@@ -1,10 +1,14 @@
 <child-block [userName]="uName" [userAge]="uAge"></child-block>
+<p>Клики — {{clicks}}</p>
+<p>{{keyvar.temperature}}</p>
+<keys-block (onChanged)="onChanged($event)" (say)="sayHello($event)" #keyvar></keys-block>
 <h1>
   {{title}}
 </h1>
 <label>Ваше имя:</label>
 <input [(ngModel)]="name" [placeholder]="nameval" id="maininp">
 <button (click)="onClickMe()">Click me!</button>
+<button (click)="sayT()">PushMe</button>
 <div class="content-block col-1-4">
   <h3>{{name}}</h3>
   {{content}}
@@ -16,7 +20,7 @@
   <router-outlet></router-outlet>
 </div>
 
-<ul class="user-list">
+<ul class="user-list red">
   <li *ngFor="let user of users">
     {{ user.id }} — {{ user.name }}
   </li>
